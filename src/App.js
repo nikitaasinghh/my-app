@@ -7,23 +7,19 @@ import Car from './Car.js'
 import Home from './Home.js'
 import About from './About.js'
 import Layout from './Layout.js'
+import UseReducer from './UseReducer.js'
 import { Route, Routes } from "react-router-dom";
+import { useReducer } from 'react';
+
+
 
 function App() {
+
   {/* {
   cars.map((car)=> <Car key={car.id} brand={car.brand}></Car>)} */}
   return (
     <>
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        {/* <Route path="*" element={<Vehicle />}></Route> */}
-
-
-      </Route>
-    </Routes>
-    
+    <UseReducer></UseReducer>
     </>
   //   <div className="App">
   //     {/* <header className="App-header">
