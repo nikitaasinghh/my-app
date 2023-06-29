@@ -8,8 +8,12 @@ import Home from './Home.js'
 import About from './About.js'
 import Layout from './Layout.js'
 import UseReducer from './UseReducer.js'
+import UseEffect from './UseEffect.js'
+import UseRef from './useRef.js'
 import { Route, Routes } from "react-router-dom";
 import { useReducer } from 'react';
+import UseLayoutEffect from './UseLayoutEffect';
+import UseContext from './UseContext';
 
 
 
@@ -19,7 +23,7 @@ function App() {
   cars.map((car)=> <Car key={car.id} brand={car.brand}></Car>)} */}
   return (
     <>
-    <UseReducer></UseReducer>
+    <UseContext />
     </>
   //   <div className="App">
   //     {/* <header className="App-header">
